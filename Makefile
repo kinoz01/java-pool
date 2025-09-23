@@ -121,3 +121,7 @@ __new_one:
 	else \
 		echo ">> ExerciseRunner.java already exists; not overwriting"; \
 	fi
+
+docki:
+	@echo ">> Pulling test-java image"
+	docker pull ghcr.io/01-edu/test-java:latest
