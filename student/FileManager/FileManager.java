@@ -1,3 +1,4 @@
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.*;
 
@@ -9,6 +10,7 @@ public class FileManager {
         return Files.readString(Path.of(fileName));
     }
     public static void deleteFile(String fileName) {
-        try { Files.deleteIfExists(Path.of(fileName)); } catch (IOException ignored) {}
+        File fyl = new File(fileName);
+        fyl.delete();
     }
 }
