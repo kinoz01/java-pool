@@ -1,4 +1,7 @@
 - [[DoOp]]
 - [[SortArgs ]]
 - [[Cat]]
-- 
+- [[CatInFile]]
+- [[Capitalize]]
+- [[FileManager]]
+- [[FileSearch]]
