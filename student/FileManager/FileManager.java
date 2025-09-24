@@ -3,7 +3,7 @@ import java.nio.file.*;
 
 public class FileManager {
     public static void createFile(String fileName, String content) throws IOException {
-        Files.writeString(Path.of(fileName), content == null ? "" : content);
+        Files.writeString(Path.of(fileName), content);
     }
     public static String getContentFile(String fileName) throws IOException {
         return Files.readString(Path.of(fileName));
