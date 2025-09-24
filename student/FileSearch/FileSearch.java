@@ -6,8 +6,7 @@ public class FileSearch {
     public static String searchFile(String fileName) {
         Path start = Path.of("documents");
         try (Stream<Path> w = Files.walk(start)) {
-            return w.filter(Files::isRegularFile)
-                    .filter(p -> p.getFileName().toString().equals(fileName))
+            return w.filter(p -> p.getFileName().toString().equals(fileName))
                     .map(p -> start.getFileName() + "/"
                             + start.relativize(p).toString().replace(File.separatorChar, '/'))
                     .findFirst().orElse(null);
