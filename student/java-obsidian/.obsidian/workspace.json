@@ -1,0 +1,280 @@
+{
+  "main": {
+    "id": "613fedb1769aad49",
+    "type": "split",
+    "children": [
+      {
+        "id": "46731edabcbc223c",
+        "type": "tabs",
+        "dimension": 72.90167865707434,
+        "children": [
+          {
+            "id": "d1775270c8d6d944",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "JAVA-Intro.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "JAVA-Intro"
+            }
+          },
+          {
+            "id": "2f2f08ecb20e74b1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ComputeArray.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ComputeArray"
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "5c5612c5ecce5773",
+        "type": "tabs",
+        "dimension": 27.098321342925658,
+        "children": [
+          {
+            "id": "8114a3c5cafe4270",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "graph",
+              "state": {},
+              "pinned": true,
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          },
+          {
+            "id": "a0595f989fb73122",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://openclassrooms.com/en/login?context=courseAccess",
+                "title": "Go to course - OpenClassrooms",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "Go to course - OpenClassrooms"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "44897b5e9006d788",
+    "type": "split",
+    "children": [
+      {
+        "id": "8cfdbf97f1589117",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d890c8191208acfd",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "507f60c10771205e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "de4915c64fba4f01",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 208.5
+  },
+  "right": {
+    "id": "354adb2d95b9f673",
+    "type": "split",
+    "children": [
+      {
+        "id": "c33a12c8fb71467c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4644002453aa67de",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Texture \"load_sprites()\".md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Texture \"load_sprites()\""
+            }
+          },
+          {
+            "id": "ca4f813812c40044",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "main.rs.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for main.rs"
+            }
+          },
+          {
+            "id": "35c7988a224dd393",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "1f0200db3760cc3d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "5511d8d160455a4f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "grass.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of grass"
+            }
+          },
+          {
+            "id": "761be8a2e15b5a67",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "git-view"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "graph:Open graph view": false,
+      "switcher:Open quick switcher": false,
+      "canvas:Create new canvas": false,
+      "command-palette:Open command palette": false,
+      "templates:Insert template": false,
+      "daily-notes:Open today's daily note": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "2f2f08ecb20e74b1",
+  "lastOpenFiles": [
+    "JAVA-Intro.md",
+    "ComputeArray.md",
+    "Palindrome.md",
+    "JVM.md",
+    "mutable.md",
+    "CleanExtract.md",
+    "StringReplace.md",
+    "immutable.md",
+    "StringLength.md",
+    "StringContains.md",
+    "StringConcat.md",
+    "Welcome.md",
+    "bytecode.md",
+    "Chifoumi.md",
+    "IsEven.md",
+    "FloatOperations.md",
+    "IntOperations.md",
+    "Classes.md",
+    "Object.md",
+    "HelloWorld.md",
+    "create a link.md",
+    "major_minor().md",
+    "column_widths.md",
+    "print_long().md",
+    "Inodes.md",
+    "hard link count.md",
+    "intersetion.png",
+    "Untitled.canvas",
+    "Untitled 1.canvas",
+    "Pasted image 20250814125509.png",
+    "copilot-custom-prompts"
+  ]
+}

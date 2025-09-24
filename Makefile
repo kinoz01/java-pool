@@ -1,5 +1,6 @@
 # Makefile for running 01-edu Java module tests via Docker
 # Usage:
+#	First pull the image by running: docki
 #   make <exercise-name>            # e.g., make HelloWorld
 #   make list                       # show all exercise targets
 #   make run EXERCISE=HelloWorld    # alternate form
