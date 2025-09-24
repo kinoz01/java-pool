@@ -6,7 +6,7 @@
       {
         "id": "46731edabcbc223c",
         "type": "tabs",
-        "dimension": 72.90167865707434,
+        "dimension": 69.13730255164035,
         "children": [
           {
             "id": "d1775270c8d6d944",
@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JAVA-Intro.md",
+                "file": "IO-ARGS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "JAVA-Intro"
+              "title": "IO-ARGS"
             }
           },
           {
@@ -42,21 +42,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SortArgs.md",
+                "file": "Comparator.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SortArgs"
+              "title": "Comparator"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       },
       {
         "id": "5c5612c5ecce5773",
         "type": "tabs",
-        "dimension": 27.098321342925658,
+        "dimension": 30.862697448359658,
         "children": [
           {
             "id": "8114a3c5cafe4270",
@@ -68,20 +67,6 @@
               "pinned": true,
               "icon": "lucide-git-fork",
               "title": "Graph view"
-            }
-          },
-          {
-            "id": "a0595f989fb73122",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://openclassrooms.com/en/login?context=courseAccess",
-                "title": "Go to course - OpenClassrooms",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "Go to course - OpenClassrooms"
             }
           }
         ]
@@ -257,15 +242,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5099c346f5f52661",
+  "active": "8114a3c5cafe4270",
   "lastOpenFiles": [
     "IO-ARGS.md",
+    "JAVA-Intro.md",
+    "Comparator.md",
     "SortArgs.md",
+    "ComputeArray.md",
     "DoOp.md",
+    "StringContains.md",
+    "StringConcat.md",
     "Welcome.md",
     "bytecode.md",
-    "ComputeArray.md",
-    "JAVA-Intro.md",
     "Palindrome.md",
     "JVM.md",
     "mutable.md",
@@ -273,8 +261,6 @@
     "StringReplace.md",
     "immutable.md",
     "StringLength.md",
-    "StringContains.md",
-    "StringConcat.md",
     "Chifoumi.md",
     "IsEven.md",
     "FloatOperations.md",
@@ -284,7 +270,6 @@
     "HelloWorld.md",
     "create a link.md",
     "major_minor().md",
-    "column_widths.md",
     "intersetion.png",
     "Untitled.canvas",
     "Untitled 1.canvas",
