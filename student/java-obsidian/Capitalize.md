@@ -14,7 +14,7 @@ public class Capitalize {
         if (s == null)
             return "";
         StringBuilder ret = new StringBuilder();
-        for (String w : s.trim().split(" +")) {
+        for (String w : s.trim().split(" +")) { // this is called enhanced loop
             if (!w.isEmpty())
                 ret.append(Character.toUpperCase(w.charAt(0)))
                         .append(w.substring(1).toLowerCase())

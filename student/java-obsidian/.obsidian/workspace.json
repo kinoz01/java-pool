@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "IO-ARGS.md",
-                "mode": "source",
+                "file": "FileSearch.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "IO-ARGS"
+              "title": "FileSearch"
             }
           },
           {
@@ -70,12 +70,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OOP1.md",
+                "file": "Cat.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "OOP1"
+              "title": "Cat"
             }
           },
           {
@@ -120,8 +120,7 @@
               "title": "Comparator"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       },
       {
         "id": "5c5612c5ecce5773",
@@ -313,34 +312,34 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c16e18ac854219ea",
+  "active": "d1775270c8d6d944",
   "lastOpenFiles": [
-    "OOP1.md",
-    "FileSearch.md",
     "IO-ARGS.md",
-    "SortArgs.md",
-    "HelloWorld.md",
-    "JAVA-Intro.md",
+    "FileSearch.md",
     "FileManager.md",
     "Capitalize.md",
-    "CatInFile.md",
-    "DoOp.md",
+    "HelloWorld.md",
+    "JAVA-Intro.md",
     "Cat.md",
+    "DoOp.md",
+    "SortArgs.md",
+    "CatInFile.md",
+    "CleanExtract.md",
     "ComputeArray.md",
-    "Comparator.md",
+    "immutable.md",
+    "for loops.md",
+    "bytecode.md",
+    "JVM.md",
+    "Palindrome.md",
+    "Chifoumi.md",
     "StringContains.md",
     "StringConcat.md",
-    "Welcome.md",
-    "bytecode.md",
-    "Palindrome.md",
-    "JVM.md",
-    "mutable.md",
-    "CleanExtract.md",
-    "StringReplace.md",
-    "immutable.md",
     "StringLength.md",
-    "Chifoumi.md",
     "IsEven.md",
+    "FloatOperations.md",
+    "IntOperations.md",
+    "StringReplace.md",
+    "Comparator.md",
     "intersetion.png",
     "Untitled.canvas",
     "Untitled 1.canvas",

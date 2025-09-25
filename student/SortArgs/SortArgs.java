@@ -1,6 +1,8 @@
+import java.util.Arrays;
+
 public class SortArgs {
     public static void sort(String[] a) {
-        java.util.Arrays.sort(a, java.util.Comparator.comparingInt(Integer::parseInt));
+        Arrays.sort(a, (b, c) -> Integer.parseInt(b) - Integer.parseInt(c));     
         System.out.println(String.join(" ", a));
     }
 }

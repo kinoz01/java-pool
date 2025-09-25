@@ -1,6 +1,5 @@
 import java.io.*;
-import java.nio.file.Files;
-import java.nio.file.Paths;
+import java.nio.file.*;
 
 public class ExerciseRunner {
     public static void main(String[] args) throws IOException {
