@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Checkpoint-1.md",
+                "file": "Factorial.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Checkpoint-1"
+              "title": "Factorial"
             }
           }
         ]
@@ -216,11 +216,11 @@
   },
   "active": "c91a0ab785a3e0e9",
   "lastOpenFiles": [
-    "Factorial.md",
     "Checkpoint-1.md",
-    "AlmostPalindrome.md",
-    "UnitConverter.md",
     "NextPrime.md",
+    "AlmostPalindrome.md",
+    "Factorial.md",
+    "UnitConverter.md",
     "IO-ARGS.md",
     "SortArray.md",
     "ReverseArray.md",
