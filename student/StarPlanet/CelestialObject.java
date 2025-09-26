@@ -3,11 +3,11 @@ import java.util.Objects;
 
 public class CelestialObject {
     private double x, y, z;
-    private String name;
+    private String name = "Soleil";
     public static final double KM_IN_ONE_AU = 1.5e8;
 
     public CelestialObject() {
-        this("Soleil", 0, 0, 0);
+        // default constructor
     }
 
     public CelestialObject(String name, double x, double y, double z) {
@@ -62,10 +62,14 @@ public class CelestialObject {
         return String.format("%s is positioned at (%.3f, %.3f, %.3f)", name, x, y, z);
     }
 
-    public boolean equals(CelestialObject obj) {
-        if (obj == null)
+    public boolean equals(Object o) {
+        if (this == o)
+            return true;
+        if (!(o instanceof CelestialObject))
             return false;
-        return this.name == obj.name && this.x == obj.x && this.y == obj.y && this.z == obj.z;
+        CelestialObject c = (CelestialObject) o;
+        return Double.compare(x, c.x) == 0 && Double.compare(y, c.y) == 0 &&
+                Double.compare(z, c.z) == 0 && Objects.equals(name, c.name);
     }
 
     public int hashCode() {

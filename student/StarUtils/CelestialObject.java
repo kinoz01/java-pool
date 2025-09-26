@@ -58,23 +58,16 @@ public class CelestialObject {
         return getDistanceBetween(a, b) * KM_IN_ONE_AU;
     }
 
-    @Override
     public String toString() {
         return String.format("%s is positioned at (%.3f, %.3f, %.3f)", name, x, y, z);
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o)
-            return true;
-        if (!(o instanceof CelestialObject))
+    public boolean equals(CelestialObject obj) {
+        if (obj == null)
             return false;
-        CelestialObject c = (CelestialObject) o;
-        return Double.compare(x, c.x) == 0 && Double.compare(y, c.y) == 0 &&
-                Double.compare(z, c.z) == 0 && Objects.equals(name, c.name);
+        return this.name == obj.name && this.x == obj.x && this.y == obj.y && this.z == obj.z;
     }
 
-    @Override
     public int hashCode() {
         return Objects.hash(name, x, y, z);
     }
