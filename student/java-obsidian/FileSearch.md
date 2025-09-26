@@ -36,8 +36,6 @@ If not found, return `null`.
 
 ## ✅ Step-by-Step Breakdown
 
----
-
 ### **Step 1: Set the starting folder**
 
 ```java

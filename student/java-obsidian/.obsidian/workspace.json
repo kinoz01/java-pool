@@ -9,118 +9,35 @@
         "dimension": 73.8009592326139,
         "children": [
           {
-            "id": "d1775270c8d6d944",
+            "id": "c91a0ab785a3e0e9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "FileSearch.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "FileSearch"
-            }
-          },
-          {
-            "id": "4bcf47b7a722c0af",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "IO-ARGS.md",
+                "file": "Checkpoint-1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "IO-ARGS"
+              "title": "Checkpoint-1"
             }
           },
           {
-            "id": "30eb1e365ef4685f",
+            "id": "7e0cd7d910d9fc81",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "webviewer",
               "state": {
-                "file": "IO-ARGS.md",
-                "mode": "source",
-                "source": false
+                "url": "https://excalidraw.com/",
+                "title": "Excalidraw Whiteboard",
+                "mode": "webview"
               },
-              "icon": "lucide-file",
-              "title": "IO-ARGS"
-            }
-          },
-          {
-            "id": "67a5d3ad4b04f1e5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "JAVA-Intro.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "JAVA-Intro"
-            }
-          },
-          {
-            "id": "c16e18ac854219ea",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Cat.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Cat"
-            }
-          },
-          {
-            "id": "8f0aa9e6192d88de",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "FileSearch.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "FileSearch"
-            }
-          },
-          {
-            "id": "2f2f08ecb20e74b1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ComputeArray.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "ComputeArray"
-            }
-          },
-          {
-            "id": "5099c346f5f52661",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Comparator.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Comparator"
+              "icon": "globe-2",
+              "title": "Excalidraw Whiteboard"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "5c5612c5ecce5773",
@@ -312,34 +229,34 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d1775270c8d6d944",
+  "active": "7e0cd7d910d9fc81",
   "lastOpenFiles": [
+    "Checkpoint-1.md",
     "IO-ARGS.md",
+    "NextPrime.md",
+    "Factorial.md",
+    "AlmostPalindrome.md",
+    "SortArray.md",
+    "ReverseArray.md",
+    "RotateArray.md",
+    "Digitlen.md",
+    "CountChar.md",
+    "Strlen.md",
+    "UnitConverter.md",
+    "MultiplicationTable.md",
+    "AverageCalc.md",
+    "JAVA-Intro.md",
+    "UniversalGreeting.md",
+    "SystemLogger.md",
+    "GoodbyeMars.md",
+    "JVM.md",
     "FileSearch.md",
+    "Classes.md",
+    "goodbye-mars.md",
     "FileManager.md",
     "Capitalize.md",
     "HelloWorld.md",
-    "JAVA-Intro.md",
     "Cat.md",
-    "DoOp.md",
-    "SortArgs.md",
-    "CatInFile.md",
-    "CleanExtract.md",
-    "ComputeArray.md",
-    "immutable.md",
-    "for loops.md",
-    "bytecode.md",
-    "JVM.md",
-    "Palindrome.md",
-    "Chifoumi.md",
-    "StringContains.md",
-    "StringConcat.md",
-    "StringLength.md",
-    "IsEven.md",
-    "FloatOperations.md",
-    "IntOperations.md",
-    "StringReplace.md",
-    "Comparator.md",
     "intersetion.png",
     "Untitled.canvas",
     "Untitled 1.canvas",
