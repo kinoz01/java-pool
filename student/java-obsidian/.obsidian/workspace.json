@@ -21,23 +21,8 @@
               "icon": "lucide-file",
               "title": "Checkpoint-1"
             }
-          },
-          {
-            "id": "7e0cd7d910d9fc81",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://excalidraw.com/",
-                "title": "Excalidraw Whiteboard",
-                "mode": "webview"
-              },
-              "icon": "globe-2",
-              "title": "Excalidraw Whiteboard"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "5c5612c5ecce5773",
@@ -229,20 +214,20 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7e0cd7d910d9fc81",
+  "active": "c91a0ab785a3e0e9",
   "lastOpenFiles": [
-    "Checkpoint-1.md",
-    "IO-ARGS.md",
-    "NextPrime.md",
     "Factorial.md",
+    "Checkpoint-1.md",
     "AlmostPalindrome.md",
+    "UnitConverter.md",
+    "NextPrime.md",
+    "IO-ARGS.md",
     "SortArray.md",
     "ReverseArray.md",
     "RotateArray.md",
     "Digitlen.md",
     "CountChar.md",
     "Strlen.md",
-    "UnitConverter.md",
     "MultiplicationTable.md",
     "AverageCalc.md",
     "JAVA-Intro.md",

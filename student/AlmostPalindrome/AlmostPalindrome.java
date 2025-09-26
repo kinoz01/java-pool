@@ -6,11 +6,11 @@ public class AlmostPalindrome {
             i++;
             j--;
         }
-        return i < j && (p(s, i+1, j) || p(s, i, j-1));
+        return i < j && (p(s, i + 1, j) || p(s, i, j - 1));
     }
-    
+
     private static boolean p(String s, int i, int j) {
-        while(i < j) if (s.charAt(i++) != s.charAt(j--)) return false;
+        while (i < j) if (s.charAt(i++) != s.charAt(j--)) return false;
         return true;
     }
 }

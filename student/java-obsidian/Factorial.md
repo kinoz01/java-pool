@@ -1,4 +1,4 @@
-```java
+int ```java
 public class Factorial {
     public static Integer factorial(Integer n) {
         if (n == null || n < 0) return null;
