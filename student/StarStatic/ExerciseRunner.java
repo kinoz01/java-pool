@@ -1,5 +1,4 @@
 public class ExerciseRunner {
-
     public static void main(String[] args) {
         CelestialObject defaultStar = new CelestialObject();
         CelestialObject earth = new CelestialObject("Terre", 1.0, 2.0, 2.0);
