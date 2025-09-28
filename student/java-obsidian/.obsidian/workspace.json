@@ -6,7 +6,7 @@
       {
         "id": "46731edabcbc223c",
         "type": "tabs",
-        "dimension": 79.13669064748201,
+        "dimension": 57.9136690647482,
         "children": [
           {
             "id": "c91a0ab785a3e0e9",
@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "StarStatic.md",
+                "file": "OOP1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "StarStatic"
+              "title": "OOP1"
             }
           },
           {
@@ -35,13 +35,28 @@
               "icon": "lucide-file",
               "title": "List interface"
             }
+          },
+          {
+            "id": "789cdbbd3ea4532e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "JART.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "JART"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       },
       {
         "id": "5c5612c5ecce5773",
         "type": "tabs",
-        "dimension": 20.863309352517987,
+        "dimension": 42.086330935251794,
         "children": [
           {
             "id": "8114a3c5cafe4270",
@@ -228,34 +243,34 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8114a3c5cafe4270",
+  "active": "789cdbbd3ea4532e",
   "lastOpenFiles": [
-    "StarStatic.md",
+    "image instance creation.md",
+    "JART.md",
     "OOP1.md",
-    "Static vs Instance Methods.md",
-    "StarGetters.md",
-    "FileSearch.md",
-    "constructor.md",
-    "StarConstructors.md",
+    "IO-ARGS.md",
+    "FactorialMaster.md",
+    "Checkpoint-2.md",
+    "string pool.md",
+    "Q&A.md",
+    "Types of methods allowed in Java interfaces.md",
+    "List interface.md",
+    "What is an `interface` in Java?.md",
+    "Chifoumi.md",
+    "Classes.md",
     "StarProperties.md",
+    "StarGetters.md",
+    "constructor.md",
+    "Static vs Instance Methods.md",
+    "Can non-static methods be called without creating an object?.md",
+    "StarConstructors.md",
+    "StarStatic.md",
+    "Welcome.md",
+    "FileSearch.md",
     "Palindrome.md",
     "Checkpoint-1.md",
     "JAVA-Intro.md",
-    "Checkpoint-2.md",
     "TimeTracker.md",
-    "TimeTraker.md",
-    "What are collections in detail?.md",
-    "Q&A.md",
-    "What is the notation in Java, and when do we use it?.md",
-    "FactorialMaster.md",
-    "time-tracke.md",
-    "NextPrime.md",
-    "Can non-static methods be called without creating an object?.md",
-    "Types of methods allowed in Java interfaces.md",
-    "What is an `interface` in Java?.md",
-    "List interface.md",
-    "Welcome.md",
-    "JVM.md",
     "intersetion.png",
     "Untitled.canvas",
     "Untitled 1.canvas",

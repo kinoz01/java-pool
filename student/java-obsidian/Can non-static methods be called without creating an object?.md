@@ -81,9 +81,9 @@ So when I said *"without an object, instance variables don't exist"*, I meant th
 
 ## 3\. **Static vs Non-Static Method Comparison**
 
-| Feature | Static Method | Non-Static Method |
-| --- | --- | --- |
-| Belongs to | Class | Object (instance) |
-| Accessed via | Class name | Object reference |
-| Can access instance data | ❌ No | ✅ Yes |
-| Needs object to call | ❌ No | ✅ Yes |
+| Feature                  | Static Method | Non-Static Method |
+| ------------------------ | ------------- | ----------------- |
+| Belongs to               | Class         | Object (instance) |
+| Accessed via             | Class name    | Object reference  |
+| Can access instance data | ❌ No          | ✅ Yes             |
+| Needs object to call     | ❌ No          | ✅ Yes             |
