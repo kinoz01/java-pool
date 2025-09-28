@@ -1,5 +1,4 @@
 public class ExerciseRunner {
-
     public static void main(String[] args) {
         CelestialObject defaultStar = new CelestialObject();
         System.out.println(defaultStar.x);
