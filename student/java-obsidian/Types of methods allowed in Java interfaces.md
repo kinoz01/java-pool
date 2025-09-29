@@ -129,9 +129,9 @@ Reducing code duplication among default methods or static methods in the same in
 
 ## Summary Table
 
-| Method Type | Available Since | Inheritable | Requires Implementation in Class | Use Case |
-| --- | --- | --- | --- | --- |
-| Abstract | Java 1.0 | Yes | Yes | Define method contracts |
-| Default | Java 8 | Yes | No (optional override) | Add new methods without breaking code |
-| Static | Java 8 | No | Not applicable | Utility/helper methods |
-| Private | Java 9 | No | Not applicable | Code reuse within the interface |
+| Method Type | Available Since | Inheritable | Requires Implementation in Class | Use Case                              |
+| ----------- | --------------- | ----------- | -------------------------------- | ------------------------------------- |
+| Abstract    | Java 1.0        | Yes         | Yes                              | Define method contracts               |
+| Default     | Java 8          | Yes         | No (optional override)           | Add new methods without breaking code |
+| Static      | Java 8          | No          | Not applicable                   | Utility/helper methods                |
+| Private     | Java 9          | No          | Not applicable                   | Code reuse within the interface       |
