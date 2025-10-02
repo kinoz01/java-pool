@@ -32,3 +32,16 @@ public class Main {
 ```
 
 `Image image = new Image(1000, 1000);` -> new [[image instance creation]].
+
+> All you need to learn about this project is **[[polymorphism]]** concepts, usage of implements and how `graphic2d` would draw each shape.
+
+- [[Image]] class
+- our [[Interfaces]]
+**Shapes drawing**
+- [[Point]]
+- [[Line]]
+- [[Rectangle]]
+- [[Triangle]]
+- [[Circle]]
+- [[Pentagon]]
+- [[Cube]]

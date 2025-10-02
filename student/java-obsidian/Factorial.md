@@ -11,8 +11,6 @@ public class Factorial {
 
 The difference between **`int`** and **`Integer`** in Java is fundamental. Let’s break it down clearly.
 
----
-
 ## 1\. **`int` (Primitive Type)**
 
 -   A primitive data type.

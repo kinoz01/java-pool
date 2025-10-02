@@ -1,54 +1,36 @@
 ```java
-import java.time.*;
-import java.time.format.*;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class ProjectTime {
     private String startTime, endTime;
-    private long mins;
-    private static final DateTimeFormatter F = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm");
 
     public ProjectTime(String start, String end) {
-        startTime = start;
-        endTime = end;
-        recalc();
+        this.startTime = start;
+        this.endTime = end;
     }
 
     public void setStartTime(String s) {
-        startTime = s;
-        recalc();
+        this.startTime = s;
     }
 
     public void setEndTime(String e) {
-        endTime = e;
-        recalc();
-    }
-
-    public String getStartTime() {
-        return startTime;
-    }
-
-    public String getEndTime() {
-        return endTime;
+        this.endTime = e;
     }
 
     public String getHoursLogged() {
-        if (mins < 0)
-            return "-1";
-        long h = mins / 60, d = h / 24;
-        return mins < 120 ? mins + " m" : h < 120 ? h + " h" : d < 120 ? d + " d" : (d / 30) + " mo";
-    }
-
-    private void recalc() {
+        SimpleDateFormat F = new SimpleDateFormat("yyyy-MM-dd HH:mm");
         try {
-            long diff = Duration.between(LocalDateTime.parse(startTime, F), LocalDateTime.parse(endTime, F))
-                    .toMinutes();
-            mins = diff < 0 ? -1 : diff;
+            Date start = F.parse(startTime), end = F.parse(endTime);
+            Long mins = (end.getTime() - start.getTime()) / 60000;
+            if (mins < 0) return "-1";
+            long h = mins / 60, d = h / 24;
+            return mins < 120 ? mins + " m" : h < 120 ? h + " h" : d < 120 ? d + " d" : (d / 30) + " mo";
         } catch (Exception e) {
-            mins = -1;
+            return "-1";
         }
     }
 }
-
 
 public class ExerciseRunner {
     public static void main(String[] args) {
@@ -67,3 +49,96 @@ public class ExerciseRunner {
     }
 }
 ```
+
+> Tests are only using `setEndTime(String e)`, we can omit writing the other setter and getters.
+
+   A `SimpleDateFormat` object `F` is used to parse the date-time strings into `Date` objects.
+    
+-   The difference in milliseconds between the `end` and `start` times is calculated and converted to **minutes**.
+    
+-   If the result is negative (end time is before start), return `-1`.
+    
+-   Based on the number of minutes:
+    
+    -   If less than 120 minutes → return in minutes.
+        
+    -   If less than 120 hours → return in hours.
+        
+    -   If less than 120 days → return in days.
+        
+    -   Otherwise → return in months (using 30 days per month approximation).
+        
+-   If parsing fails (invalid format), it catches the exception and returns `-1`.
+
+### Note: long vs Long
+
+The difference between `Long` and `long` in Java lies in their **type category** and **behavior**:
+
+####  `long` — **Primitive Data Type**
+
+-   A basic data type (not an object).
+    
+-   Stores a 64-bit signed integer.
+    
+-   Default value: `0`
+    
+-   Faster and uses less memory.
+    
+-   Cannot be `null`.
+    
+
+**Example:**
+
+```java
+long a = 100L;
+```
+
+#### 🔹 `Long` — **Wrapper Class (Object)**
+
+-   Part of Java's `java.lang` package.
+    
+-   Wraps a `long` value in an object.
+    
+-   Can be `null`.
+    
+-   Supports methods like `Long.parseLong()`, `Long.valueOf()`, etc.
+    
+-   Used when objects are required (e.g., collections like `ArrayList<Long>`).
+    
+
+**Example:**
+
+```java
+Long b = 100L;
+```
+
+---
+
+####  Key Differences Table:
+
+| Feature | `long` (primitive) | `Long` (wrapper class) |
+| --- | --- | --- |
+| Type | Primitive | Object |
+| Nullable | No | Yes |
+| Default Value | `0` | `null` |
+| Use in Generics | Not allowed | Allowed (e.g., `List<Long>`) |
+| Memory Usage | Lower | Higher |
+| Method Support | No methods | Has utility methods |
+
+---
+
+#### Autoboxing / Unboxing:
+
+Java automatically converts between `long` and `Long` when needed:
+
+```java
+Long obj = 5L;       // autoboxing: primitive → object
+long val = obj;      // unboxing: object → primitive
+```
+
+
+####  When to Use:
+
+-   Use `**long**` for performance-sensitive or simple numerical calculations.
+    
+-   Use `**Long**` when working with collections, nullability, or needing object features.

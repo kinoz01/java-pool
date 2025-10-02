@@ -1,24 +1,22 @@
 **Group 1
 - [[TimeTracker]]
-- ￼￼UniversalGreeting￼￼
-- ￼￼AverageCalc￼￼
+- [[TodoList]]
 
 **Group 2**
-- [[FactorialMaster ]]
-- ￼￼MultiplicationTable￼￼
-- ￼￼UnitConverter￼￼
+- [[AreaCalculator]]
+- [[FactorialMaster]]
+- [[Flexisort]]
 
-￼￼Group 3￼￼
-- ￼￼Strlen￼￼
-- ￼￼CountChar￼￼
-- ￼￼Digitlen￼￼
+**Group 3**
+- [[SingleLinkedList]]
+- [[CircularLinkedList]]
+- [[DoubleLinkedList]]
 
-￼￼Group 4￼￼
-- ￼￼RotateArray￼￼
-- ￼￼ReverseArray￼￼
-- ￼￼SortArray￼￼
+**Group 4**
+- [[HarmoniousFusion]]
+- [[DistinctSubstringLength]]
 
-￼￼Group 5￼￼
-- ￼￼AlmostPalindrome￼￼
-- ￼￼Factorial￼￼
-- ￼￼NextPrime￼￼
+**Group 5**
+
+
+[Excalidraw](https://excalidraw.com/#json=Dcp0gW2jjTOobv-k4irof,_j92plX4-MPh0xiRZXSyyQ)

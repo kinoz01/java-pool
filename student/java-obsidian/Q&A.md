@@ -6,7 +6,7 @@
 - Types of methods allowed in Java interfaces [[Types of methods allowed in Java interfaces|🔗]]
 - *static vs non-static methods*. Can **non-static** methods be called without creating an object? [[Can non-static methods be called without creating an object?|🔗]]
 - What is the **::** notation in Java, and when do we use it? [[What is the notation in Java, and when do we use it? |🔗]]
-- string pool [[string pool |🔗]]
+- Why `s1.equals(s2)` doesn't give same result as `s1 == s2` (string pool) [[string pool |🔗]]
 
 
 

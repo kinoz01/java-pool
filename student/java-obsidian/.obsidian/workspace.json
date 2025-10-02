@@ -6,7 +6,7 @@
       {
         "id": "46731edabcbc223c",
         "type": "tabs",
-        "dimension": 72.84172661870504,
+        "dimension": 81.998199819982,
         "children": [
           {
             "id": "c91a0ab785a3e0e9",
@@ -14,82 +14,40 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OOP1.md",
+                "file": "FactorialMaster.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "OOP1"
+              "title": "FactorialMaster"
             }
           },
           {
-            "id": "789cdbbd3ea4532e",
+            "id": "eb2fb888c022dc8a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TimeTracker.md",
+                "file": "Checkpoint-2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TimeTracker"
+              "title": "Checkpoint-2"
             }
           },
           {
-            "id": "2f849357c9263c28",
+            "id": "4e277e10acbbc251",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "webviewer",
               "state": {
-                "file": "Types of methods allowed in Java interfaces.md",
-                "mode": "source",
-                "source": false
+                "url": "https://excalidraw.com/",
+                "title": "Excalidraw Whiteboard",
+                "mode": "webview"
               },
-              "icon": "lucide-file",
-              "title": "Types of methods allowed in Java interfaces"
-            }
-          },
-          {
-            "id": "da9a7a736b1ed9e1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "HelloWorld.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "HelloWorld"
-            }
-          },
-          {
-            "id": "469104621bf7e101",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AlmostPalindrome.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "AlmostPalindrome"
-            }
-          },
-          {
-            "id": "2b4193b7c105d2e2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "graphic2d.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "graphic2d"
+              "icon": "globe-2",
+              "title": "Excalidraw Whiteboard"
             }
           }
         ],
@@ -98,7 +56,7 @@
       {
         "id": "5c5612c5ecce5773",
         "type": "tabs",
-        "dimension": 27.15827338129496,
+        "dimension": 18.001800180018,
         "children": [
           {
             "id": "8114a3c5cafe4270",
@@ -169,7 +127,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 208.5
+    "width": 208.5,
+    "collapsed": true
   },
   "right": {
     "id": "354adb2d95b9f673",
@@ -285,34 +244,34 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "789cdbbd3ea4532e",
+  "active": "eb2fb888c022dc8a",
   "lastOpenFiles": [
     "Checkpoint-2.md",
-    "JART.md",
-    "image instance creation.md",
-    "Q&A.md",
-    "Types of methods allowed in Java interfaces.md",
-    "OOP1.md",
-    "List interface.md",
-    "AlmostPalindrome.md",
-    "GoodbyeMars.md",
-    "Checkpoint-1.md",
-    "hello.md",
-    "test.md",
-    "hey.md",
-    "HelloWorld.md",
-    "JAVA-Intro.md",
-    "graphic2d.md",
-    "IO-ARGS.md",
+    "Flexisort.md",
+    "TodoList.md",
     "FactorialMaster.md",
-    "string pool.md",
-    "What is an `interface` in Java?.md",
-    "Chifoumi.md",
-    "Classes.md",
-    "StarProperties.md",
-    "StarGetters.md",
-    "constructor.md",
-    "Static vs Instance Methods.md",
+    "TimeTracker.md",
+    "JART.md",
+    "Checkpoint-1.md",
+    "AreaCalculator.md",
+    "polymorphism.md",
+    "abstract.md",
+    "abstract classes.md",
+    "Q&A.md",
+    "Cube.md",
+    "Pentagon.md",
+    "Rectangle.md",
+    "Triangle.md",
+    "Circle.md",
+    "Line.md",
+    "Interfaces.md",
+    "Point.md",
+    "SortArgs.md",
+    "StringLength.md",
+    "StringContains.md",
+    "Palindrome.md",
+    "JAVA-Intro.md",
+    "IsEven.md",
     "intersetion.png",
     "Untitled.canvas",
     "Untitled 1.canvas",

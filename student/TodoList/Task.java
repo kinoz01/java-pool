@@ -1,24 +1,24 @@
 public class Task {
     private String description;
     private TaskStatus status = TaskStatus.NEW;
-
+    
     public Task(String d) {
-        this.description = d;
+        description = d;
+    }
+
+    public void setDescription(String s) {
+        description = s;
     }
 
     public String getDescription() {
         return description;
     }
-
-    public void setDescription(String description) {
-        this.description = description;
+    
+    public void setStatus(TaskStatus s) {
+        status = s;
     }
-
+    
     public TaskStatus getStatus() {
         return status;
-    }
-
-    public void setStatus(TaskStatus status) {
-        this.status = status;
     }
 }
