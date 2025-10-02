@@ -3,21 +3,26 @@ public class SingleLinkedList implements LinkedList {
 
     @Override
     public int at(int index) {
-        if (index < 0 || index >= ll.size()) return -1;
-        for (int i = 0; i < index; i++) next();
+        if (index < 0 || index >= ll.size())
+            return -1;
+        for (int i = 0; i < index; i++)
+            next();
         return ll.get(index);
     }
 
     @Override
     public void add(int value) {
-        for (int i = 1; i < ll.size(); i++) next();
+        for (int i = 1; i < ll.size(); i++)
+            next();
         ll.add(value);
     }
 
     @Override
     public void remove(int index) {
-        if (index < 0 || index >= ll.size()) return;
-        for (int i = 0; i < index; i++) next();
+        if (index < 0 || index >= ll.size())
+            return;
+        for (int i = 0; i < index; i++)
+            next();
         ll.remove(index);
     }
 

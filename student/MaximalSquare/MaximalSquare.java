@@ -3,7 +3,7 @@ public class MaximalSquare {
         if (m == null || m.length == 0 || m[0].length == 0)
             return 0;
         int cols = m[0].length, best = 0, prev = 0;
-        int[] dp = new int[cols + 1]; // rolling 1D DP
+        int[] dp = new int[cols + 1];
         for (char[] row : m) {
             prev = 0;
             for (int j = 1; j <= cols; j++) {
