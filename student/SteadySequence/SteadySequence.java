@@ -1,20 +1,23 @@
-import java.util.*;
+import java.util.Arrays;
 
 public class SteadySequence {
     public int longestSequence(int[] nums) {
-        if (nums == null || nums.length == 0)
+        if (nums == null || nums.length == 0) {
             return 0;
-        Set<Integer> s = new HashSet<>();
-        for (int x : nums)
-            s.add(x);
-        int best = 0;
-        for (int x : s)
-            if (!s.contains(x - 1)) {
-                int y = x;
-                while (s.contains(y))
-                    y++;
-                best = Math.max(best, y - x);
+        }
+
+        Arrays.sort(nums);
+        int maxLength = 1;
+        int currentLength = 1;
+
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i] == nums[i - 1] + 1) {
+                currentLength++;
+            } else if (nums[i] != nums[i - 1]) {
+                currentLength = 1;
             }
-        return best;
+            maxLength = Math.max(maxLength, currentLength);
+        }
+        return maxLength;
     }
 }
