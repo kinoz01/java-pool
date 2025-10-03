@@ -13,7 +13,7 @@ public class ExerciseRunner {
         System.out.println("Element at index 2: " + list.at(2)); // Expected output: 3
 
         // Remove an element by index
-        list.remove(1);
+        list.remove(31);
         System.out.println("Element at index 1 after removal: " + list.at(1)); // Expected output: 3
     }
 }

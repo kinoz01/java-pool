@@ -41,3 +41,5 @@ public class CircularLinkedList implements LinkedList {
     }
 }
 ```
+
+[[CircularLinkedList manual]] solution.

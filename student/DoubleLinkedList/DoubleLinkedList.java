@@ -3,14 +3,14 @@ public class DoubleLinkedList implements LinkedList {
 
     @Override
     public int at(int index) {
-        if (index < 0 || index > ll.size()) return -1;
+        if (index < 0 || index >= ll.size()) return -1;
         traverse(ll.size(), index);
         return ll.get(index);
     }
 
     @Override
     public void add(int value) {
-        ll.addLast(value);
+        ll.add(value);
     }
 
     @Override
@@ -25,13 +25,12 @@ public class DoubleLinkedList implements LinkedList {
         return ll.size();
     }
 
-    private void traverse(int n, int index) {
-        int headDist = index, tailDist = n - 1 - index;
-        if (headDist <= tailDist) for (int i = 0; i < headDist; i++) System.out.println("Go to next node");
-        if (headDist > tailDist) for (int i = 0; i < tailDist; i++) System.out.println("Go to previous node");
+    private void traverse(int size, int index) {
+        int headDist = index, tailDist = size - 1 - index;
+        if (headDist <= tailDist) for (int i=0; i<headDist; i++) System.out.println("Go to next node");
+        else for (int i=0; i<tailDist; i++) System.out.println("Go to previous node"); 
     }
 }
-
 // public class DoubleLinkedList implements LinkedList {
 // private Node head, tail;
 // private int n;
