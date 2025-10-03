@@ -1,5 +1,3 @@
-import org.w3c.dom.Node;
-
 public class SingleLinkedList implements LinkedList {
     private final java.util.LinkedList<Integer> ll = new java.util.LinkedList<>();
 
