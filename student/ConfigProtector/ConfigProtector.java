@@ -14,7 +14,7 @@ public class ConfigProtector {
             if (eq >= 0) {
                 String key = line.substring(0, eq);
                 if (sensitiveKeys.contains(key)) {
-                    int len = line.length() - (eq + 1); // value length
+                    int len = line.length();
                     line = key + "=" + "*".repeat(len); // mask with same length
                 }
             }
