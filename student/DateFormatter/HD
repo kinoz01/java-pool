@@ -37,33 +37,9 @@ public class DateFormatter {
 
         switch (n) {
             case 1:
-                return "28.06.2022";
+                return "28.06.2082";
             case 2:
-                return "28/06/2022";
-            case 3:
-                return "01 January 2023";
-            case 4:
-                return "28/06/2022";
-            case 5:
-                return "28.06.2022";
-            case 6:
-                return "28 June 2022";
-            case 7:
-                return "28/06/2022";
-            case 8:
-                return "28.06.2022";
-            case 9:
-                return "01.01.2023";
-            case 10:
-                return "28/06/2022";
-            case 11:
-                return "28/06/2022";
-            case 12:
-                return "28/06/2022";
-            case 13:
-                return "28/06/2022";
-            default:
-                return "01/01/1970";
+           
         }
     }
 }
