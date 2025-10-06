@@ -1,40 +1,10 @@
+import  java.time.*;
+import  java.time.format.DateTimeFormatter;
+import  java.util.Locale;
+
 public class DateFormatter {
-    private long date;              // seconds since epoch (UTC)
-    private String format;          // "DD/MM/YYYY", "DD.MM.YYYY", "DD Month YYYY" (canonical case)
-    private String formattedDate;   // formatted in UTC
-
-    private static final String[] MONTHS = {
-        "January","February","March","April","May","June",
-        "July","August","September","October","November","December"
-    };
-
-    private static String canon(String f) {
-        if (f == null) return null;
-        String s = f.trim().replaceAll("\\s+", " ").toUpperCase();
-        if (s.equals("DD/MM/YYYY"))   return "DD/MM/YYYY";
-        if (s.equals("DD.MM.YYYY"))   return "DD.MM.YYYY";
-        if (s.equals("DD MONTH YYYY"))return "DD Month YYYY";
-        return null;
-    }
-
-    private static String two(int n) { return (n < 10 ? "0" : "") + n; }
-
-    private void recompute() {
-        if (format == null) return;
-        java.util.Calendar c = java.util.Calendar.getInstance(java.util.TimeZone.getTimeZone("UTC"));
-        c.setTime(new java.util.Date(date * 1000L));
-        int d = c.get(java.util.Calendar.DAY_OF_MONTH);
-        int m = c.get(java.util.Calendar.MONTH);      // 0..11
-        int y = c.get(java.util.Calendar.YEAR);
-
-        if (format.equals("DD/MM/YYYY")) {
-            formattedDate = two(d) + "/" + two(m + 1) + "/" + y;
-        } else if (format.equals("DD.MM.YYYY")) {
-            formattedDate = two(d) + "." + two(m + 1) + "." + y;
-        } else { // "DD Month YYYY"
-            formattedDate = two(d) + " " + MONTHS[m] + " " + y;
-        }
-    }
+    private long date;
+    private String format;
 
     public DateFormatter() {
         this(System.currentTimeMillis() / 1000L, "DD/MM/YYYY");
@@ -47,23 +17,53 @@ public class DateFormatter {
     public DateFormatter(long date, String format) {
         this.date = date;
         this.format = canon(format);
-        if (this.format == null) this.format = "DD/MM/YYYY";
-        recompute();
+        if (this.format == null)
+            this.format = "DD/MM/YYYY";
     }
 
-    public long getDate() { return date; }
-    public String getFormat() { return format; }
-    public String getFormattedDate() { return formattedDate; }
+    public long getDate() {
+        return date;
+    }
+
+    public String getFormat() {
+        return format;
+    }
 
     public void setDate(long date) {
         this.date = date;
-        recompute();
     }
 
     public void setFormat(String fmt) {
         String c = canon(fmt);
-        if (c == null) return; // invalid: do nothing
-        this.format = c;
-        recompute();
+        if (c != null)
+            this.format = c;
+    }
+
+    public String getFormattedDate() {
+        ZonedDateTime zdt = Instant.ofEpochSecond(date).atZone(ZoneOffset.UTC);
+
+        switch (format) {
+            case "DD/MM/YYYY":
+                return zdt.format(DateTimeFormatter.ofPattern("dd/MM/uuuu").withLocale(Locale.ENGLISH));
+            case "DD.MM.YYYY":
+                return zdt.format(DateTimeFormatter.ofPattern("dd.MM.uuuu").withLocale(Locale.ENGLISH));
+            case "DD Month YYYY":
+                return zdt.format(DateTimeFormatter.ofPattern("dd MMMM uuuu").withLocale(Locale.ENGLISH));
+            default:
+                return zdt.format(DateTimeFormatter.ofPattern("dd/MM/uuuu").withLocale(Locale.ENGLISH));
+        }
+    }
+
+    private static String canon(String f) {
+        if (f == null)
+            return null;
+        String s = f.trim().replaceAll("\\s+", " ").toUpperCase(Locale.ROOT);
+        if (s.equals("DD/MM/YYYY"))
+            return "DD/MM/YYYY";
+        if (s.equals("DD.MM.YYYY"))
+            return "DD.MM.YYYY";
+        if (s.equals("DD MONTH YYYY"))
+            return "DD Month YYYY";
+        return null;
     }
 }
