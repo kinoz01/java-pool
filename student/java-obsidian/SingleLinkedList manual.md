@@ -268,4 +268,4 @@ Remove index 0 (remove head 10)
             
         -   Slightly smaller memory per node (no outer reference) and no accidental retention of the outer list.
             
--   Practical rule: make `Node` `static` when it doesn’t need to read fields of `SingleLinkedList`. That’s true in your code, so marking it `private static class Node` is a clean improvement. (Your `next(Node)` helper could also be `static`; it doesn’t use instance fields.)
+- Practical rule: make `Node` `static` when it doesn’t need to read fields of `SingleLinkedList`. That’s true in your code, so marking it `private static class Node` is a clean improvement. (Your `next(Node)` helper could also be `static`; it doesn’t use instance fields.)

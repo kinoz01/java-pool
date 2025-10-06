@@ -1,12 +1,19 @@
 public class DistinctSubstringLength {
     public int maxLength(String s) {
-        int[] last = new int[1000];
-        int best = 0, left = 0;
-        for (int i = 0; i < s.length(); i++) {
-            left = Math.max(left, last[s.charAt(i)]);
-            best = Math.max(best, i - left + 1);
-            last[s.charAt(i)] = i + 1;
+        // Implementation to find the length of the longest substring without repeating characters
+        int n = s.length();
+        int maxLength = 0;
+        for (int i = 0; i < n; i++){
+            StringBuilder str = new StringBuilder();
+            for (int j = i; j < n; j++){
+                char c = s.charAt(j);
+                boolean exists = false;
+                for ()
+                str.append(s.charAt(j));
+                maxLength = Math.max(maxLength, str.length());
+            }
         }
-        return best;
+        return maxLength;
     }
 }
+

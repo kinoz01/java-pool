@@ -13,7 +13,8 @@ public class Main {
 
         // Force different objects
         String s3 = new String("HELLO");
-        System.out.println("s1 == s3 : " + (s1 == s3));
+        String s4 = new String("HELLO");
+        System.out.println("s4 == s3 : " + (s4 == s3));
         System.out.println("s1.equals(s3) : " + s1.equals(s3));
     }
 }
@@ -21,6 +22,7 @@ public class Main {
 
 > Why `s1 == s3` would print false??
 
+> Both in *heap* or both in *stack* they can be compared, one in *stack* and the other in the *heap* they can't be compared you need to use `equals`.
 ### 1\. What is the String Pool?
 
 -   The **String Pool** (also called the **intern pool**) is a special memory region inside the Java Heap where **string literals** are stored.

@@ -1,5 +1,4 @@
 import java.time.*;
-import java.time.format.DateTimeFormatter;
 
 public class DayOfWeekFinder {
     public String findNextDayOfWeek(String startDate, String dayOfWeek) {
