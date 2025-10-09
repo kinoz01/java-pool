@@ -1,6 +1,6 @@
 import java.util.*;
 
-class ConcreteRegexBuilder implements RegexBuilder {
+public class ConcreteRegexBuilder implements RegexBuilder {
     private final List<String> component = new ArrayList<>();
 
     @Override
@@ -31,21 +31,5 @@ class ConcreteRegexBuilder implements RegexBuilder {
     @Override
     public Regex getResult() {
         return new Regex(component);
-    }
-}
-
-class RegexDirector {
-    private RegexBuilder builder;
-
-    public void setBuilder(RegexBuilder b) {
-        this.builder = b;
-    }
-
-    public Regex construct() {
-        builder.buildLiteral("Hello");
-        builder.buildWhitespace();
-        builder.buildWordCharacter();
-        builder.buildAnyCharacter();
-        return builder.getResult();
     }
 }

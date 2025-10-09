@@ -1,4 +1,3 @@
-
 public class HTMLValidator {
 
     public boolean validateHTML(String html) {

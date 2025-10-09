@@ -2,10 +2,10 @@ import java.util.List;
 
 public class ConfigProtector {
     public String hideSensitiveData(String configFile, List<String> sensitiveKeys) {
-        if (configFile == null || sensitiveKeys == null || sensitiveKeys.isEmpty())
+        if (configFile == null || configFile.equals("") || sensitiveKeys == null || sensitiveKeys.isEmpty())
             return configFile;
 
-        String[] lines = configFile.split("\n", -1);
+        String[] lines = configFile.split("\n");
         StringBuilder out = new StringBuilder();
 
         for (int i = 0; i < lines.length; i++) {
@@ -18,9 +18,7 @@ public class ConfigProtector {
                     line = key + "=" + "*".repeat(len); // mask with same length
                 }
             }
-            out.append(line);
-            if (i < lines.length - 1)
-                out.append('\n'); // preserve newlines exactly
+            out.append(line+"\n");
         }
         return out.toString();
     }

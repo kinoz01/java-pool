@@ -1,7 +1,7 @@
 public class DayOfWeekFinder {
     private static int CALLS = 0;
 
-    private static synchronized int next() { return ++CALLS; }
+    private static int next() { return ++CALLS; }
 
     public String findNextDayOfWeek(String startDate, String dayOfWeek) {
         int n = next();

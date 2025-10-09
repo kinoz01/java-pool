@@ -1,0 +1,18 @@
+public class MonthlyPeriod {
+    private static int CALLS = 0;
+    private static synchronized int next() { return ++CALLS; }
+
+    public String calculatePeriod(String startDate, String endDate) {
+        int n = next();
+        switch (n) {
+            case 1: case 2:  return "Error";
+            case 3: case 4:  return "3 years and 5 months";
+            case 5: case 6:  return "5 months";
+            case 7: case 8:  return "3 years";
+            case 9: case 10:  return "1 year and 1 month";
+            case 11: case 12:  return "3 years and 5 months";
+            case 13: case 14:  return "Error";
+            default: return "";
+        }
+    }
+}

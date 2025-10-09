@@ -2,19 +2,23 @@ import java.util.*;
 
 public class TopFrequents {
     public List<Integer> findTopKFrequent(int[] nums, int k) {
-        Map<Integer, Integer> freq = new HashMap<>();
-        Map<Integer, Integer> first = new HashMap<>();
-        for (int i = 0; i < nums.length; i++) {
-            int x = nums[i];
-            freq.put(x, freq.getOrDefault(x, 0) + 1);
-            first.putIfAbsent(x, i);
+        List<Integer> ns = new ArrayList<Integer>(), fr = new ArrayList<Integer>(), getNums = new ArrayList<Integer>(), res = new ArrayList<Integer>();
+        for (int x : nums) {
+            int index = ns.indexOf(x);
+            if (index == -1) {
+                ns.add(x);
+                fr.add(1);
+            } else {
+                fr.set(index, fr.get(index) + 1);
+            }
         }
-        List<Integer> keys = new ArrayList<>(freq.keySet());
-        keys.sort((a, b) -> {
-            int fa = freq.get(a), fb = freq.get(b);
-            if (fa != fb) return fb - fa;
-            return first.get(a) - first.get(b);
-        });
-        return keys.subList(0, Math.min(k, keys.size()));
+
+        for (int i = 0; i < ns.size(); i++)
+            getNums.add(i);
+        getNums.sort((a, b) -> Integer.compare(fr.get(b), fr.get(a)));
+        for (int i = 0; i < Math.min(k, getNums.size()); i++) {
+            res.add(ns.get(getNums.get(i)));
+        }
+        return res;
     }
 }
