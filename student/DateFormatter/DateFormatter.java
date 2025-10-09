@@ -38,7 +38,6 @@ public class DateFormatter {
         return switch (format) {
             case "DD.MM.YYYY"    -> d.format(DateTimeFormatter.ofPattern("dd.MM.uuuu"));
             case "DD MONTH YYYY" -> d.format(DateTimeFormatter.ofPattern("dd MMMM uuuu"));
-            case "DD/MM/YYYY"    -> d.format(DateTimeFormatter.ofPattern("dd/MM/uuuu"));
             default              -> d.format(DateTimeFormatter.ofPattern("dd/MM/uuuu"));
         };
     }

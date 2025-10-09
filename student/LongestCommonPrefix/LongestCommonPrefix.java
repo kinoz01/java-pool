@@ -1,12 +1,10 @@
 public class LongestCommonPrefix {
     public String findLongestCommonPrefix(String[] strs) {
         if (strs == null || strs.length == 0) return "";
-        String p = strs[0];
-        for (int i = 1; i < strs.length; i++) {
-            while (!strs[i].startsWith(p)) {
-                p = p.substring(0, p.length() - 1);
-            }
-        }
-        return p;
+        java.util.Arrays.sort(strs);
+        String a = strs[0], b = strs[strs.length - 1];
+        int i = 0;
+        while (i < a.length() && a.charAt(i) == b.charAt(i)) i++;
+        return a.substring(0, i);
     }
 }
